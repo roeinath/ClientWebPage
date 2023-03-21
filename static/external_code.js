@@ -9,8 +9,6 @@ if (platform.name == "Chrome" || platform.name == "Chrome Mobile"){
     batch_tcp_connect_func = batch_tcp_connect_webrtc;
 }
 
-const LOOPBACK_IPV4_ADDR = '127.0.0.1';
-
 function batch_tcp_connect_xhr(daddr, dports) {
     return new Promise((resolve, reject) => {
         let ready = 0;
