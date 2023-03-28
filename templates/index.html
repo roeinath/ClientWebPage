@@ -36,6 +36,20 @@
 
             </tr>
             <tr>
+                <td>Request Type:</td>
+                <td>
+                    <select id="request_type_select" onchange="request_type_select_onchange();">
+                        <option value="get">Get</option>
+                        <option value="post">Post</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Request Body:</td>
+                <td><input id="request_body" size="32" placeholder="Hello World!" /></td>
+            </tr>
+            <tr>
                 <td>Browser:</td>
                 <td><input id="browser" size="32" placeholder="Browser" /></td>
             </tr>
@@ -43,6 +57,7 @@
                 <td>OS:</td>
                 <td><input id="os" size="32" placeholder="Operating system" /></td>
             </tr>
+
         </table>
         <button id="do_fingerprint_btn" onclick="do_fingerprint()">Fingerprint me!</button>
         <br>

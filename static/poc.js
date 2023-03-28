@@ -28,6 +28,12 @@ function tracker_address_select_onchange() {
     }
 }
 
+function request_type_select_onchange() {
+    let select_tag = document.getElementById("request_type_select");
+    let selected_option = select_tag.options[select_tag.selectedIndex];
+    poc_log(selected_option.value);
+}
+
 tracker_address_select_onchange();
 
 const LOOPBACK_IPV4_ADDR = '127.0.0.1';
